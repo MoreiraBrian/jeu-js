@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    background: url('feuillecarreau.jpg');
+    background-size: cover;
+    color: darkred;
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    font-size: 60px;
+    padding: 1%;
+}
+
+#game {
+    display: flex;
+    background: url('table.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Indie Flower', cursive;
+    font-size: 208px;
+}
+
+#morpion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('image.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    padding: 1%;
+}
+
+.case {
+    width: calc(1/3*95%);
+    height: calc(1/3*99%);
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    border-top: hidden;
+}
+
+.left {
+    border-left: hidden;
+}
+
+.right {
+    border-right: hidden;
+}
+
+.bot {
+    border-bottom: hidden;
+}
+
+#toure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background: url('feuillecarreau.jpg');
+    background-size: cover;
+    margin: 3%;
+}
+
+p {
+    font-size: 40px;
+    color: blue;
+    margin: 18%;
+    display: block;
+}
