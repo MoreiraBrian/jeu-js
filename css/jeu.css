@@ -2,6 +2,45 @@ body {
     margin: 0;
 }
 
+button {
+    border: 0;
+    background: url('feuillecarreau.jpg');
+    background-size: cover;
+    font-size: 100px;
+    font-family: 'Indie Flower', cursive;
+    color: blue;
+    position: absolute;
+    left: 136px;
+    bottom: 0;
+}
+
+#gagne {
+    position: absolute;
+    background: url('feuillecarreau.jpg');
+    background-size: cover;
+    margin: auto;
+    width: 70vh;
+    height: 70vh;
+    top: 14%;
+    left: 33%;
+    z-index: 1;
+    display: none;
+}
+
+#score {
+    background: url('feuillecarreau.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+#score div {
+    line-height: 0px;
+}
+
 h1 {
     background: url('feuillecarreau.jpg');
     background-size: cover;
@@ -11,6 +50,18 @@ h1 {
     left: 40%;
     font-size: 60px;
     padding: 1%;
+}
+
+h2 {
+    color: blue;
+    font-size: 40px;
+    margin: auto;
+    padding-left: 26%;
+}
+
+#final {
+    font-size: 90px;
+    font-family: 'Indie Flower', cursive;
 }
 
 #game {

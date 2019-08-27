@@ -10,7 +10,17 @@
 </head>
 
 <body>
+    <div id="gagne">
+        <p id="final"></p><button>Continuer</button></div>
     <div id="game">
+        <div id="score">
+            <h2>SCORES</h2>
+            <div>
+                <p>X : <span id="x">0</span></p>
+                <p>O : <span id="o">0</span> </p>
+                <p>Egalitées: <span id="e">0</span></p>
+            </div>
+        </div>
         <h1 id="haut">TIC TAC TOE</h1>
         <div id="morpion">
             <div class="case , top , left"></div>
@@ -24,7 +34,7 @@
             <div class="case , bot , right"></div>
         </div>
         <div id="toure">
-            <p>Au joueur X de jouer.</p>
+            <p id="jou">Au joueur X de jouer.</p>
         </div>
     </div>
     <script src="js/jeu.js"></script>
