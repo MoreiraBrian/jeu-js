@@ -60,6 +60,13 @@ function gagner() {
             O++;
         };
         setTimeout("afficher(cases[3].innerHTML)", 200);
+    } else if (cases[2].innerHTML !== "" && cases[2].innerHTML === cases[5].innerHTML && cases[5].innerHTML === cases[8].innerHTML) {
+        if (cases[2].innerHTML !== "" && cases[2].innerHTML === 'X') {
+            X++;
+        } else if (cases[2].innerHTML !== "" && cases[2].innerHTML === 'O') {
+            O++;
+        };
+        setTimeout("afficher(cases[2].innerHTML)", 200);
     } else if (cases[6].innerHTML !== "" && cases[6].innerHTML === cases[7].innerHTML && cases[7].innerHTML === cases[8].innerHTML) {
         if (cases[6].innerHTML !== "" && cases[6].innerHTML === 'X') {
             X++;

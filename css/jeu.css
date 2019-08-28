@@ -10,8 +10,12 @@ button {
     font-family: 'Indie Flower', cursive;
     color: blue;
     position: absolute;
-    left: 136px;
+    left: 30%;
     bottom: 0;
+}
+
+#jou {
+    padding: 7%;
 }
 
 #gagne {
@@ -73,10 +77,11 @@ h2 {
     align-items: center;
     min-height: 100vh;
     font-family: 'Indie Flower', cursive;
-    font-size: 208px;
+    font-size: 150px;
 }
 
 #morpion {
+    font-family: 'Bad Script', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,8 +89,8 @@ h2 {
     background: url('image.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     padding: 1%;
 }
 
@@ -130,4 +135,58 @@ p {
     color: blue;
     margin: 18%;
     display: block;
+    margin: auto;
+    line-height: 60px;
+}
+
+#score div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px),
+screen and (max-device-width: 600px) {
+    #score {
+        top: 300px;
+        right: 251px;
+        width: 479px;
+        height: 384px;
+    }
+    #game {
+        flex-direction: column;
+        font-size: 200px;
+    }
+    h2 {
+        font-size: 60px;
+        padding-left: 15%;
+    }
+    p {
+        font-size: 60px;
+    }
+    h1 {
+        width: 98%;
+        font-size: 178px;
+        left: 0;
+        top: -120px;
+    }
+    #morpion {
+        width: 960px;
+        margin-top: 623px;
+        height: 960px;
+    }
+    #jou {
+        font-size: 40px;
+    }
+    #gagne {
+        width: 33vh;
+        height: 33vh;
+        top: 43%;
+        left: 15%;
+    }
+    button {
+        font-size: 170px;
+        left: 0;
+    }
 }
