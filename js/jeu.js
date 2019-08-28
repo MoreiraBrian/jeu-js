@@ -48,74 +48,92 @@ function gagner() {
     if (cases[0].innerHTML !== "" && cases[0].innerHTML === cases[1].innerHTML && cases[1].innerHTML === cases[2].innerHTML) {
         if (cases[0].innerHTML !== "" && cases[0].innerHTML === 'X') {
             X++;
+
         } else if (cases[0].innerHTML !== "" && cases[0].innerHTML === 'O') {
             O++;
+
         };
         setTimeout("afficher(cases[0].innerHTML)", 200);
 
     } else if (cases[3].innerHTML !== "" && cases[3].innerHTML === cases[4].innerHTML && cases[4].innerHTML === cases[5].innerHTML) {
         if (cases[3].innerHTML !== "" && cases[3].innerHTML === 'X') {
             X++;
+
         } else if (cases[3].innerHTML !== "" && cases[3].innerHTML === 'O') {
             O++;
+
         };
         setTimeout("afficher(cases[3].innerHTML)", 200);
     } else if (cases[2].innerHTML !== "" && cases[2].innerHTML === cases[5].innerHTML && cases[5].innerHTML === cases[8].innerHTML) {
         if (cases[2].innerHTML !== "" && cases[2].innerHTML === 'X') {
             X++;
+
         } else if (cases[2].innerHTML !== "" && cases[2].innerHTML === 'O') {
             O++;
+
         };
         setTimeout("afficher(cases[2].innerHTML)", 200);
     } else if (cases[6].innerHTML !== "" && cases[6].innerHTML === cases[7].innerHTML && cases[7].innerHTML === cases[8].innerHTML) {
         if (cases[6].innerHTML !== "" && cases[6].innerHTML === 'X') {
             X++;
+
         } else if (cases[6].innerHTML !== "" && cases[6].innerHTML === 'O') {
             O++;
+
         };
         setTimeout("afficher(cases[6].innerHTML)", 200);
     } else if (cases[0].innerHTML !== "" && cases[0].innerHTML === cases[3].innerHTML && cases[3].innerHTML === cases[6].innerHTML) {
         if (cases[0].innerHTML !== "" && cases[0].innerHTML === 'X') {
             X++;
+
         } else if (cases[0].innerHTML !== "" && cases[0].innerHTML === 'O') {
             O++;
+
         };
         setTimeout("afficher(cases[0].innerHTML)", 200);
     } else if (cases[1].innerHTML !== "" && cases[1].innerHTML === cases[4].innerHTML && cases[4].innerHTML === cases[7].innerHTML) {
         if (cases[1].innerHTML !== "" && cases[1].innerHTML === 'X') {
             X++;
+
         } else if (cases[1].innerHTML !== "" && cases[4].innerHTML === 'O') {
             O++;
+
         };
         setTimeout("afficher(cases[1].innerHTML)", 200);
     } else if (cases[3].innerHTML !== "" && cases[3].innerHTML === cases[5].innerHTML && cases[5].innerHTML === cases[8].innerHTML) {
         if (cases[3].innerHTML !== "" && cases[3].innerHTML === 'X') {
             X++;
+
         } else if (cases[3].innerHTML !== "" && cases[3].innerHTML === 'O') {
             O++;
+
         };
         setTimeout("afficher(cases[3].innerHTML)", 200);
     } else if (cases[4].innerHTML !== "" && cases[4].innerHTML === cases[0].innerHTML && cases[0].innerHTML === cases[8].innerHTML) {
         if (cases[4].innerHTML !== "" && cases[4].innerHTML === 'X') {
             X++;
 
+
         } else if (cases[4].innerHTML !== "" && cases[1].innerHTML === 'O') {
             O++;
+
         };
         setTimeout("afficher(cases[4].innerHTML)", 200);
     } else if (cases[4].innerHTML !== "" && cases[4].innerHTML === cases[2].innerHTML && cases[2].innerHTML === cases[6].innerHTML) {
         if (cases[4].innerHTML !== "" && cases[4].innerHTML === 'X') {
             X++;
 
+
         } else if (cases[4].innerHTML !== "" && cases[1].innerHTML === 'O') {
             O++;
+
         };
         setTimeout("afficher(cases[4].innerHTML)", 200);
     } else if (cases[0].innerHTML !== "" && cases[1].innerHTML !== "" && cases[2].innerHTML !== "" && cases[3].innerHTML !== "" && cases[4].innerHTML !== "" && cases[5].innerHTML !== "" && cases[6].innerHTML !== "" && cases[7].innerHTML !== "" && cases[8].innerHTML !== "") {
         E++;
         setTimeout(function() {
             win.style.display = "block";
-            good.innerHTML = `Egalitée !`;
+            good.innerHTML = `Egalité !`;
 
             cases.forEach(el => el.innerHTML = "");
         }, 200);
@@ -123,6 +141,7 @@ function gagner() {
         joueur.innerHTML = "Au joueur X de jouer.";
     }
     setTimeout(affi(), 200);
+
 }
 
 function jouer() {
